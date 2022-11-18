@@ -7,10 +7,10 @@
 000007 77 MAXI  PIC 999.
 000008 PROCEDURE DIVISION.
 000009 MAIN.
-           display "Entrer la valeur de X"
-           accept X
-           display "Entrer la valeur de y"
-           accept Y
+           display "Entrer la valeur de X".
+           accept X.
+           display "Entrer la valeur de y".
+           accept Y.
 000010     CALL "MAXI" USING CONTENT X Y REFERENCE MAXI.
 000011     DISPLAY "max (" X "," Y ") = " MAXI.
 000012     STOP RUN.
