@@ -2,11 +2,15 @@
 000002   PROGRAM-ID. A.
 000003 DATA DIVISION.
 000004   WORKING-STORAGE SECTION.
-000005 77 X     PIC 999 VALUE 34.
-000006 77 Y     PIC 999 VALUE 77.
+000005 77 X     PIC  999.
+000006 77 Y     PIC  999.
 000007 77 MAXI  PIC 999.
 000008 PROCEDURE DIVISION.
 000009 MAIN.
+           display "Entrer la valeur de X"
+           accept X
+           display "Entrer la valeur de y"
+           accept Y
 000010     CALL "MAXI" USING CONTENT X Y REFERENCE MAXI.
 000011     DISPLAY "max (" X "," Y ") = " MAXI.
 000012     STOP RUN.
