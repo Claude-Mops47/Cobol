@@ -9,7 +9,7 @@
 
        PROCEDURE DIVISION.
 
-           DISPLAY 'Bienvenue dans mon petit programme'.
+           DISPLAY 'Bonjour, bienvenue dans mon petit programme'.
            DISPLAY 'Quel est ton nom ?'.
 
            ACCEPT WS-NOM.
